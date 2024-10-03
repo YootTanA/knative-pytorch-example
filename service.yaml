@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: resnet50
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+      - image: docker.io/{username}/resnet50
+        env:
+        - name: PORT
+          value: 8080
