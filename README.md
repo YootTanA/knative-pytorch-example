@@ -7,4 +7,4 @@ In this example, I used pretrained models from [Pytorch Website](https://pytorch
 To get started, you'll need a cluster to test this out.
 
 Let go check this tutorial: https://knative.dev/docs/getting-started/. 
-Choose your preferred cluster tool and try my deploy my examples on your serverless platform. Enjoy!! 
+Choose your preferred cluster tool and try deploy my examples on your serverless platform. Enjoy!! 
