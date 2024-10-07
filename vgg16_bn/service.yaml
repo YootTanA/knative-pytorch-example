@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v16_bn
+kind: Service
+metadata:
+  name: vgg16_bn
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+      - image: docker.io/{username}/vgg16_bn
