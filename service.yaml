@@ -8,6 +8,3 @@ spec:
     spec:
       containers:
       - image: docker.io/{username}/resnet50
-        env:
-         - name: PORT
-           value: 8080
