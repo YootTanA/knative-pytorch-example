@@ -3,7 +3,7 @@ dirs=$(ls  -l | grep -v resnet50 | grep -v kustomize | grep '^d' | awk '{print $
 for d in $dirs; do 
   echo "-----"
   echo $d
-  rm -f $d/service.yaml
+  find $d/ -type f -exec sed -i "s/resnetImage/resnet50Image/g" {} \;
 
   echo "-----"
 done;

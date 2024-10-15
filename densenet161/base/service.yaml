@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${resnetImage}
+      - image: ${resnet50Image}
