@@ -1,6 +1,126 @@
 resources:
-  - ../kustomization/128Mi/
-  - ../kustomization/256Mi/
-  - ../kustomization/512Mi/
-  - ../kustomization/1024Mi/
-  - ../kustomization/2048Mi/
+  - ../alexnet/128Mi/
+  - ../alexnet/256Mi/
+  - ../alexnet/512Mi/
+  - ../alexnet/1024Mi/
+  - ../alexnet/2048Mi/
+
+  - ../inception.v3/128Mi/
+  - ../inception.v3/256Mi/
+  - ../inception.v3/512Mi/
+  - ../inception.v3/1024Mi/
+  - ../inception.v3/2048Mi/
+
+  - ../resnet18/128Mi/
+  - ../resnet18/256Mi/
+  - ../resnet18/512Mi/
+  - ../resnet18/1024Mi/
+  - ../resnet18/2048Mi/
+
+  - ../resnet34/128Mi/
+  - ../resnet34/256Mi/
+  - ../resnet34/512Mi/
+  - ../resnet34/1024Mi/
+  - ../resnet34/2048Mi/
+
+  - ../resnet50/128Mi/
+  - ../resnet50/256Mi/
+  - ../resnet50/512Mi/
+  - ../resnet50/1024Mi/
+  - ../resnet50/2048Mi/
+
+  - ../resnet101/128Mi/
+  - ../resnet101/256Mi/
+  - ../resnet101/512Mi/
+  - ../resnet101/1024Mi/
+  - ../resnet101/2048Mi/
+
+  - ../resnet152/128Mi/
+  - ../resnet152/256Mi/
+  - ../resnet152/512Mi/
+  - ../resnet152/1024Mi/
+  - ../resnet152/2048Mi/
+
+  - ../vgg11/128Mi/
+  - ../vgg11/256Mi/
+  - ../vgg11/512Mi/
+  - ../vgg11/1024Mi/
+  - ../vgg11/2048Mi/
+
+  - ../vgg16/128Mi/
+  - ../vgg16/256Mi/
+  - ../vgg16/512Mi/
+  - ../vgg16/1024Mi/
+  - ../vgg16/2048Mi/
+
+  - ../vgg16-bn/128Mi/
+  - ../vgg16-bn/256Mi/
+  - ../vgg16-bn/512Mi/
+  - ../vgg16-bn/1024Mi/
+  - ../vgg16-bn/2048Mi/
+
+  - ../vgg19/128Mi/
+  - ../vgg19/256Mi/
+  - ../vgg19/512Mi/
+  - ../vgg19/1024Mi/
+  - ../vgg19/2048Mi/
+
+  - ../densenet121/128Mi/
+  - ../densenet121/256Mi/
+  - ../densenet121/512Mi/
+  - ../densenet121/1024Mi/
+  - ../densenet121/2048Mi/
+
+  - ../densenet161/128Mi/
+  - ../densenet161/256Mi/
+  - ../densenet161/512Mi/
+  - ../densenet161/1024Mi/
+  - ../densenet161/2048Mi/
+
+  - ../densenet169/128Mi/
+  - ../densenet169/256Mi/
+  - ../densenet169/512Mi/
+  - ../densenet169/1024Mi/
+  - ../densenet169/2048Mi/
+
+  - ../densenet201/128Mi/
+  - ../densenet201/256Mi/
+  - ../densenet201/512Mi/
+  - ../densenet201/1024Mi/
+  - ../densenet201/2048Mi/
+
+  - ../resnext50.32x4d/128Mi/
+  - ../resnext50.32x4d/256Mi/
+  - ../resnext50.32x4d/512Mi/
+  - ../resnext50.32x4d/1024Mi/
+  - ../resnext50.32x4d/2048Mi/
+
+  - ../resnext101.32x8d/128Mi/
+  - ../resnext101.32x8d/256Mi/
+  - ../resnext101.32x8d/512Mi/
+  - ../resnext101.32x8d/1024Mi/
+  - ../resnext101.32x8d/2048Mi/
+
+  - ../squeezenet1.0/128Mi/
+  - ../squeezenet1.0/256Mi/
+  - ../squeezenet1.0/512Mi/
+  - ../squeezenet1.0/1024Mi/
+  - ../squeezenet1.0/2048Mi/
+
+  - ../squeezenet1.1/128Mi/
+  - ../squeezenet1.1/256Mi/
+  - ../squeezenet1.1/512Mi/
+  - ../squeezenet1.1/1024Mi/
+  - ../squeezenet1.1/2048Mi/
+
+  #  - ../wide-resnet101/128Mi/
+  #  - ../wide-resnet101/256Mi/
+  #  - ../wide-resnet101/512Mi/
+  #  - ../wide-resnet101/1024Mi/
+  #  - ../wide-resnet101/2048Mi/
+  #
+  #  - ../wide-resnet50/128Mi/
+  #  - ../wide-resnet50/256Mi/
+  #  - ../wide-resnet50/512Mi/
+  #  - ../wide-resnet50/1024Mi/
+  #  - ../wide-resnet50/2048Mi/
