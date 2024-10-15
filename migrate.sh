@@ -3,7 +3,7 @@ dirs=$(ls  -l | grep -v resnet50 | grep -v kustomize | grep '^d' | awk '{print $
 for d in $dirs; do 
   echo "-----"
   echo $d
-  cp -r resnet50/* $d/
+  rm -f $d/service.yaml
 
   echo "-----"
 done;
