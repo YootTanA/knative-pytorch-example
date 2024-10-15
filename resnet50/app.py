@@ -44,7 +44,8 @@ def configureHandlers(app):
        except Exception as e:
            return jsonify({"error": str(e)})
    
-   @app.route('/ping', methods = ['GET'])
+   # Route for liveness, readiness, and startup probe checking.
+   @app.route('/healthz', methods = ['GET'])
    def healthCheck():
        return jsonify({"status": "healthy"})
 
@@ -54,7 +55,7 @@ class AppModule(Module):
 
     def configure(self, binder: Binder):
 
-       # Load model weights when start up
+       # Load model weights when start up.
        weights = ResNet50_Weights.DEFAULT
        model = resnet50(weights=weights)
 
