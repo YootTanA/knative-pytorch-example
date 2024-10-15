@@ -4,5 +4,7 @@ torchvision
 pillow
 txt 
 flask
+Flask-Injector
+injector
 waitress
 gunicorn

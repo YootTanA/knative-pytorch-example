@@ -1,0 +1,11 @@
+resources:
+- ../base
+
+patches:
+- target: 
+     group: serving.knative.dev
+     version: v1
+     kind: Service
+     name: resnet50
+  path: service-patch.yaml
+ 

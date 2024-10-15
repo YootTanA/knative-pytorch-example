@@ -1,0 +1,20 @@
+- op: replace
+  path: "/metadata/name"
+  value: resnet50-512Mi
+- op: add 
+  path: "/spec/template/spec/containers/0"
+  value:
+    resources:
+      requests:
+        memory: "512Mi"
+        cpu: "500m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+    
+    
+    
+    
+    
+    
+

@@ -25,4 +25,4 @@ WORKDIR $APP_HOME
 
 COPY . ./
 
-CMD ["sh", "-c", "gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app"]
+CMD ["sh", "-c", "gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 'app:createApp()'"]
