@@ -6,6 +6,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: resnet50
+     name: resnext101.32x8d
   path: service-patch.yaml
  

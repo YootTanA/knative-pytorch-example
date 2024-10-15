@@ -1,6 +1,6 @@
 - op: replace
   path: "/metadata/name"
-  value: resnet50-2048Mi
+  value: squeezenet1.1-2048Mi
 - op: add 
   path: "/spec/template/spec/containers/0"
   value:

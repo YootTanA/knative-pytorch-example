@@ -1,10 +1,10 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: resnet50
+  name: vgg16_bn
   namespace: default
 spec:
   template:
     spec:
       containers:
-      - image: ${resnet50Image}
+      - image: ${vgg16_bnImage}

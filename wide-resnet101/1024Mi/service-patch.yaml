@@ -1,15 +1,15 @@
 - op: replace
   path: "/metadata/name"
-  value: resnet50-256Mi
+  value: wide-resnet101-1024Mi
 - op: add 
   path: "/spec/template/spec/containers/0"
   value:
     resources:
       requests:
-        memory: "256Mi"
+        memory: "1024Mi"
         cpu: "500m"
       limits:
-        memory: "256Mi"
+        memory: "1024Mi"
         cpu: "500m"
     
     

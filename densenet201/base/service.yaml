@@ -1,10 +1,10 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: resnet50
+  name: densenet201
   namespace: default
 spec:
   template:
     spec:
       containers:
-      - image: ${resnet50Image}
+      - image: ${densenet201Image}

@@ -6,6 +6,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: resnet50
+     name: kustomization
   path: service-patch.yaml
  

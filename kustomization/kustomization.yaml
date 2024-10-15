@@ -1,6 +1,6 @@
 resources:
-  - ../resnet50/128Mi/
-  - ../resnet50/256Mi/
-  - ../resnet50/512Mi/
-  - ../resnet50/1024Mi/
-  - ../resnet50/2048Mi/
+  - ../kustomization/128Mi/
+  - ../kustomization/256Mi/
+  - ../kustomization/512Mi/
+  - ../kustomization/1024Mi/
+  - ../kustomization/2048Mi/
