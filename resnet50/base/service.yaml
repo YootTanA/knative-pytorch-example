@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: docker.io/{username}/resnet50:latest
+      - image: ${resnetImage}

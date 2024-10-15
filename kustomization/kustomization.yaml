@@ -1,0 +1,6 @@
+resources:
+  - ../resnet50/128Mi/
+  - ../resnet50/256Mi/
+  - ../resnet50/512Mi/
+  - ../resnet50/1024Mi/
+  - ../resnet50/2048Mi/
