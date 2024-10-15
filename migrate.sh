@@ -3,7 +3,7 @@ dirs=$(ls  -l | grep -v resnet50 | grep -v kustomize | grep '^d' | awk '{print $
 for d in $dirs; do 
   echo "-----"
   echo $d
-  find $d/ -type f -exec sed -i "s/resnet50/$d/g" {} \;
+  find $d/ -type f -exec sed -i "s/DEFAULT/IMAGENET1K_V1/g" {} \;
 
   echo "-----"
 done;

@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from flask_injector import FlaskInjector
 from PIL import Image
 from torchvision.io import read_image
-from torchvision.models import resnet34, ResNet50_Weights
+from torchvision.models import resnet34, ResNet34_Weights
 import torchvision.transforms as transforms
 
 
@@ -56,7 +56,7 @@ class AppModule(Module):
     def configure(self, binder: Binder):
 
        # Load model weights when start up.
-       weights = ResNet50_Weights.DEFAULT
+       weights = ResNet34_Weights.IMAGENET1K_V1
        model = resnet34(weights=weights)
 
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)

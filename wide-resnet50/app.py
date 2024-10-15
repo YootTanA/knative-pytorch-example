@@ -3,13 +3,13 @@ import os
 from flask import Flask, request, jsonify
 from PIL import Image
 from torchvision.io import read_image
-from torchvision.models import wide_resnet50_2, Wide_ResNet50_2_Weights
+from torchvision.models import wide_resnet50_2, Wide_Wide_ResNet50_2_2_Weights
 import torchvision.transforms as transforms
 
 app = Flask(__name__)
 
 def predict(image):
-   weights = Wide_ResNet50_2_Weights.IMAGENET1K_V1
+   weights = Wide_Wide_ResNet50_2_2_Weights.IMAGENET1K_V1
    model = wide_resnet50_2(weights=weights)
    model.eval()
 
