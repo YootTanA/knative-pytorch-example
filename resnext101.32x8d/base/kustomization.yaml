@@ -12,5 +12,5 @@ patches:
      version: v1
      kind: Service
      name: resnext101.32x8d
-  path: service-startup-probe-patch.yaml
+  path: service-patch.yaml
 

@@ -12,5 +12,5 @@ patches:
      version: v1
      kind: Service
      name: resnet152
-  path: service-startup-probe-patch.yaml
+  path: service-patch.yaml
 

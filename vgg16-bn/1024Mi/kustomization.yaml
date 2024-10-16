@@ -6,6 +6,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: vgg16_bn
+     name: vgg16-bn
   path: service-patch.yaml
  
