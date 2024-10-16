@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: vgg16-bn
-  namespace: default
+  namespace: faas
   labels:
     app: vgg16-bn
     serviceType: faas

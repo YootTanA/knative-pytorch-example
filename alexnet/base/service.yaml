@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: alexnet
-  namespace: default
+  namespace: faas
   labels:
     app: alexnet
     serviceType: faas

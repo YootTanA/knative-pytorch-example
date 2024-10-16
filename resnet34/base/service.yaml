@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: resnet34
-  namespace: default
+  namespace: faas
   labels:
     app: resnet34
     serviceType: faas

@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: vgg11
-  namespace: default
+  namespace: faas
   labels:
     app: vgg11
     serviceType: faas

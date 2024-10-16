@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: resnet101
-  namespace: default
+  namespace: faas
   labels:
     app: resnet101
     serviceType: faas

@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: resnext50.32x4d
-  namespace: default
+  namespace: faas
   labels:
     app: resnext50.32x4d
     serviceType: faas
