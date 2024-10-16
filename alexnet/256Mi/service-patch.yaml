@@ -1,6 +1,6 @@
 - op: replace
   path: "/metadata/name"
-  value: alexnet-256Mi
+  value: alexnet-256
 - op: add 
   path: "/spec/template/spec/containers/0"
   value:
