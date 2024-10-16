@@ -5,3 +5,12 @@ commonLabels:
   serviceType: faas
 resources:
 - service.yaml
+
+patches:
+- target: 
+     group: serving.knative.dev
+     version: v1
+     kind: Service
+     name: resnet152
+  path: service-startup-probe-patch.yaml
+
