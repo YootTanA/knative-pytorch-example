@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${squeezenet1.1Image}
+      - image: ${SQUEEZENET_1_1_IMAGE}

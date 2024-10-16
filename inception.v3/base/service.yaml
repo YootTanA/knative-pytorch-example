@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${inception.v3Image}
+      - image: ${INCEPTION_V3_IMAGE}

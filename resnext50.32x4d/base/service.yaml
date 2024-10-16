@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${resnext50.32x4dImage}
+      - image: ${RESNEXT_50_32X4D_IMAGE}

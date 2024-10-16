@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${vgg16BNImage}
+      - image: ${VGG_16_BN_IMAGE}

@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${densenet169Image}
+      - image: ${DENSENET_169_IMAGE}

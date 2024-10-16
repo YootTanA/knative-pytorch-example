@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${alexnetImage}
+      - image: ${ALEX_NET_IMAGE}

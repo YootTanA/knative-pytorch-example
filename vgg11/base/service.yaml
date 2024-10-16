@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${vgg11Image}
+      - image: ${VGG_11_IMAGE}

@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-      - image: ${wide-resnet101Image}
+      - image: ${WIDE_RESNET101_IMAGE}
