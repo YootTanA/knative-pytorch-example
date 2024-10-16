@@ -2,19 +2,12 @@
   path: "/metadata/name"
   value: densenet161-2048
 - op: add 
-  path: "/spec/template/spec/containers/0"
+  path: "/spec/template/spec/containers/0/resources"
   value:
-    resources:
-      requests:
-        memory: "2048Mi"
-        cpu: "500m"
-      limits:
-        memory: "2048Mi"
-        cpu: "500m"
-    
-    
-    
-    
-    
-    
+    requests:
+      memory: "2048Mi"
+      cpu: "500m"
+    limits:
+      memory: "2048Mi"
+      cpu: "500m"
 

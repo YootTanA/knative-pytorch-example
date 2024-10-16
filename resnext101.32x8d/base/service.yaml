@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: resnext101.32x8d
   namespace: default
+  labels:
+    app: resnext101.32x8d
+    serviceType: faas
 spec:
   template:
     spec:

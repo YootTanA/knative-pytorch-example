@@ -1,13 +1,14 @@
+# Change to your desire policy.
+# In my case, I need k8s to pull 
+# images from local.
 - op: add 
-  path: "/spec/template/spec/containers/0"
-  value:
-    # Change to your desire policy.
-    # In my case, I need k8s to pull 
-    # images from local.
-    imagePullPolicy: Never
-    startupProbe:
-      httpGet:
-        path: /healthz
-        port: 8080
-      failureThreshold: 30
-      periodSeconds: 10
+  path: "/spec/template/spec/containers/0/imagePullPolicy"
+  value: Never
+- op: add 
+  path: "/spec/template/spec/containers/0/startupProbe"
+  value: 
+     httpGet:
+       path: /healthz
+       port: 8080
+     failureThreshold: 30
+     periodSeconds: 10

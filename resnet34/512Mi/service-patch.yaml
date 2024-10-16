@@ -2,19 +2,12 @@
   path: "/metadata/name"
   value: resnet34-512
 - op: add 
-  path: "/spec/template/spec/containers/0"
+  path: "/spec/template/spec/containers/0/resources"
   value:
-    resources:
-      requests:
-        memory: "512Mi"
-        cpu: "500m"
-      limits:
-        memory: "512Mi"
-        cpu: "500m"
-    
-    
-    
-    
-    
-    
+    requests:
+      memory: "512Mi"
+      cpu: "500m"
+    limits:
+      memory: "512Mi"
+      cpu: "500m"
 

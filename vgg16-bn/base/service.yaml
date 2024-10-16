@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: vgg16-bn
   namespace: default
+  labels:
+    app: vgg16-bn
+    serviceType: faas
 spec:
   template:
     spec:

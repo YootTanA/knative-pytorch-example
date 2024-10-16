@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: alexnet
   namespace: default
+  labels:
+    app: alexnet
+    serviceType: faas
 spec:
   template:
     spec:

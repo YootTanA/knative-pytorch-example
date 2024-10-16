@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: densenet201
   namespace: default
+  labels:
+    app: densenet201
+    serviceType: faas
 spec:
   template:
     spec:

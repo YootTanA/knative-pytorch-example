@@ -2,19 +2,12 @@
   path: "/metadata/name"
   value: squeezenet1.1-128
 - op: add 
-  path: "/spec/template/spec/containers/0"
+  path: "/spec/template/spec/containers/0/resources"
   value:
-    resources:
-      requests:
-        memory: "128Mi"
-        cpu: "500m"
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
-    
-    
-    
-    
-    
-    
+     requests:
+       memory: "128Mi"
+       cpu: "500m"
+     limits:
+       memory: "128Mi"
+       cpu: "500m"
 

@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: squeezenet1.0
   namespace: default
+  labels:
+    app: squeezenet1.0
+    serviceType: faas
 spec:
   template:
     spec:

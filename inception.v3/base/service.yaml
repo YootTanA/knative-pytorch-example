@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: inception.v3
   namespace: default
+  labels:
+    app: inception.v3
+    serviceType: faas
 spec:
   template:
     spec:

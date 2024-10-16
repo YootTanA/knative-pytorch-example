@@ -2,19 +2,12 @@
   path: "/metadata/name"
   value: inception.v3-256
 - op: add 
-  path: "/spec/template/spec/containers/0"
+  path: "/spec/template/spec/containers/0/resources"
   value:
-    resources:
-      requests:
-        memory: "256Mi"
-        cpu: "500m"
-      limits:
-        memory: "256Mi"
-        cpu: "500m"
-    
-    
-    
-    
-    
-    
+    requests:
+      memory: "256Mi"
+      cpu: "500m"
+    limits:
+      memory: "256Mi"
+      cpu: "500m"
 

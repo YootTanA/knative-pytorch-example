@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: resnet18
   namespace: default
+  labels:
+    app: resnet18
+    serviceType: faas
 spec:
   template:
     spec:

@@ -2,19 +2,12 @@
   path: "/metadata/name"
   value: wide-resnet101-1024
 - op: add 
-  path: "/spec/template/spec/containers/0"
+  path: "/spec/template/spec/containers/0/resources"
   value:
-    resources:
-      requests:
-        memory: "1024Mi"
-        cpu: "500m"
-      limits:
-        memory: "1024Mi"
-        cpu: "500m"
-    
-    
-    
-    
-    
-    
+    requests:
+      memory: "1024Mi"
+      cpu: "500m"
+    limits:
+      memory: "1024Mi"
+      cpu: "500m"
 
