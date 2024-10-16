@@ -4,3 +4,9 @@ README.md
 *.pyo
 *.pyd
 __pycache__
+base
+128Mi
+256Mi
+512Mi
+1024Mi
+2048Mi
