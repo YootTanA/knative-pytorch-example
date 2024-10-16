@@ -1,6 +1,10 @@
 - op: add 
   path: "/spec/template/spec/containers/0"
   value:
+    # Change to your desire policy.
+    # In my case, I need k8s to pull 
+    # images from local.
+    imagePullPolicy: Never
     startupProbe:
       httpGet:
         path: /healthz
