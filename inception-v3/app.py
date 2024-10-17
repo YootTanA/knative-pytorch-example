@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from flask_injector import FlaskInjector
 from PIL import Image
 from torchvision.io import read_image
-from torchvision.models import inception.v3, Inception_V3_Weights
+from torchvision.models import inception-v3, Inception_V3_Weights
 import torchvision.transforms as transforms
 
 
@@ -57,7 +57,7 @@ class AppModule(Module):
 
        # Load model weights when start up.
        weights = Inception_V3_Weights.IMAGENET1K_V1
-       model = inception.v3(weights=weights)
+       model = inception-v3(weights=weights)
 
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)
 

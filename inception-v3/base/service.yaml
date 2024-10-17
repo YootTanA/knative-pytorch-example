@@ -1,10 +1,10 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: inception.v3
+  name: inception-v3
   namespace: faas
   labels:
-    app: inception.v3
+    app: inception-v3
     serviceType: faas
 spec:
   template:

@@ -1,13 +1,13 @@
 - op: replace
   path: "/metadata/name"
-  value: inception.v3-512
+  value: inception-v3-2048
 - op: add 
   path: "/spec/template/spec/containers/0/resources"
   value:
     requests:
-      memory: "512Mi"
+      memory: "2048Mi"
       cpu: "500m"
     limits:
-      memory: "512Mi"
+      memory: "2048Mi"
       cpu: "500m"
 

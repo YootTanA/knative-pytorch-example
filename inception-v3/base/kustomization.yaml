@@ -8,6 +8,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: inception.v3
+     name: inception-v3
   path: service-patch.yaml
 
