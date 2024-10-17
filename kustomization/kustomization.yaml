@@ -5,11 +5,11 @@ resources:
   - ../alexnet/1024Mi/
   - ../alexnet/2048Mi/
 
-  - ../inception.v3/128Mi/
-  - ../inception.v3/256Mi/
-  - ../inception.v3/512Mi/
-  - ../inception.v3/1024Mi/
-  - ../inception.v3/2048Mi/
+  - ../inception-v3/128Mi/
+  - ../inception-v3/256Mi/
+  - ../inception-v3/512Mi/
+  - ../inception-v3/1024Mi/
+  - ../inception-v3/2048Mi/
 
   - ../resnet18/128Mi/
   - ../resnet18/256Mi/
