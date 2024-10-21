@@ -1,10 +1,10 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: resnext101.32x8d
+  name: resnext101-32x8d
   namespace: faas
   labels:
-    app: resnext101.32x8d
+    app: resnext101-32x8d
     serviceType: faas
 spec:
   template:

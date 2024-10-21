@@ -8,6 +8,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: resnext101.32x8d
+     name: resnext101-32x8d
   path: service-patch.yaml
 
