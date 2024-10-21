@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from flask_injector import FlaskInjector
 from PIL import Image
 from torchvision.io import read_image
-from torchvision.models import squeezenet1.0, SqueezeNet1_0_Weights
+from torchvision.models import squeezenet1_0, SqueezeNet1_0_Weights
 import torchvision.transforms as transforms
 
 
@@ -57,7 +57,7 @@ class AppModule(Module):
 
        # Load model weights when start up.
        weights = SqueezeNet1_0_Weights.IMAGENET1K_V1
-       model = squeezenet1.0(weights=weights)
+       model = squeezenet1_0(weights=weights)
 
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)
 

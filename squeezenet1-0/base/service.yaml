@@ -1,10 +1,10 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: squeezenet1.0
+  name: squeezenet1-0
   namespace: faas
   labels:
-    app: squeezenet1.0
+    app: squeezenet1-0
     serviceType: faas
 spec:
   template:
