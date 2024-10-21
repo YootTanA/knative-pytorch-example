@@ -8,6 +8,6 @@ patches:
      group: serving.knative.dev
      version: v1
      kind: Service
-     name: squeezenet1.1
+     name: squeezenet1-1
   path: service-patch.yaml
 
