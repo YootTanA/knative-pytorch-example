@@ -56,7 +56,7 @@ class AppModule(Module):
     def configure(self, binder: Binder):
 
        # Load model weights when start up.
-       weights = ResNet50_Weights.DEFAULT
+       weights = ResNet50_Weights.IMAGENET1K_V1
        model = resnet50(weights=weights)
 
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)
