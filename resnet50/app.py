@@ -1,5 +1,6 @@
 import os
 import logging
+import datetime
 import time
 from injector import Module, Injector, inject, Binder
 from flask import Flask, request, jsonify
@@ -8,6 +9,7 @@ from PIL import Image
 from torchvision.io import read_image
 from torchvision.models import resnet50, ResNet50_Weights
 import torchvision.transforms as transforms
+
 
 class PredictionService:
     def __init__(self, model, weights):
@@ -63,7 +65,6 @@ class AppModule(Module):
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)
 
 def createApp():
-   start = time.time()
    app = Flask(__name__)
 
    gunicorn_logger = logging.getLogger('gunicorn.error')
@@ -76,8 +77,8 @@ def createApp():
         injector = Injector([AppModule(app)])
 
    FlaskInjector(app=app, injector=injector)
-   end = time.time()
-   app.logger.info("result", end - start) 
+   readyTime = datetime.datetime.now().timestamp() 
+   print(readyTime)
 
    return app
 
