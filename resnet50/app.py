@@ -3,13 +3,14 @@ import logging
 import datetime
 import time
 from injector import Module, Injector, inject, Binder
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from flask_injector import FlaskInjector
 from PIL import Image
 from torchvision.io import read_image
 from torchvision.models import resnet50, ResNet50_Weights
 import torchvision.transforms as transforms
-
+from prometheus_client import multiprocess
+from prometheus_client import generate_latest, CollectorRegistry, CONTENT_TYPE_LATEST, Gauge
 
 class PredictionService:
     def __init__(self, model, weights):
@@ -54,6 +55,14 @@ def configureHandlers(app):
    @app.route('/healthz', methods = ['GET'])
    def healthCheck():
        return jsonify({"status": "healthy"})
+    
+   @app.route("/metrics")
+   def metrics():
+       registry = CollectorRegistry()
+       multiprocess.MultiProcessCollector(registry)
+       data = generate_latest(registry)
+       return Response(data, mimetype=CONTENT_TYPE_LATEST)
+
 
 class AppModule(Module):
     def __init__(self, app):
@@ -67,6 +76,7 @@ class AppModule(Module):
 
        binder.bind(PredictionService, to=PredictionService(model, weights), scope=None)
 
+createAppTime = Gauge('app_create_time', 'Timestamp when app was created')
 def createApp():
    app = Flask(__name__)
 
@@ -80,8 +90,7 @@ def createApp():
         injector = Injector([AppModule(app)])
 
    FlaskInjector(app=app, injector=injector)
-   readyTime = datetime.datetime.now().timestamp() 
-   print(readyTime)
+   createAppTime.set(datetime.datetime.now().timestamp())
 
    return app
 

@@ -20,8 +20,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 FROM build AS ship
 ENV PORT=8080
 
-WORKDIR $APP_HOME
+ENV METRICS_PORT 9200
+ENV PROMETHEUS_MULTIPROC_DIR /tmp
+ENV prometheus_multiproc_dir /tmp
 
+WORKDIR $APP_HOME
 
 COPY . ./
 
