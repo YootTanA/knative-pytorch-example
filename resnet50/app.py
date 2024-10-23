@@ -35,12 +35,15 @@ def configureHandlers(app):
    @app.route('/predict', methods = ['POST'])
    def handlePredict(service: PredictionService):
        try:
+           start = time.time()
            image_data = request.files['image']
 
            if image_data is not None:
              image = Image.open(image_data)
              pred = service.predict(image)
 
+             end = time.time()
+             print("total request time: ", end - start)
              return jsonify({"result" : pred})
    
            return jsonify({"error":"file not found"})
