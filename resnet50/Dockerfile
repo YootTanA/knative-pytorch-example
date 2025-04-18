@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM:-linux/amd64} python:3.7-slim AS build
+FROM --platform=${TARGETPLATFORM:-linux/amd64} python:3.13-slim AS build
 
 # Allow statements and log messages to immediately appear in the Knative logs
 ENV PYTHONUNBUFFERED True
